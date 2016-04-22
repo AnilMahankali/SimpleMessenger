@@ -1,4 +1,4 @@
-package com.example.acer.myapplication;
+package com.simplemessenger;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

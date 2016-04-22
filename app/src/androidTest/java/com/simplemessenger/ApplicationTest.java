@@ -1,4 +1,4 @@
-package com.example.acer.myapplication;
+package com.simplemessenger;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

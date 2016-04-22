@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.acer.myapplication.MainActivity">
+    tools:context="com.simplemessenger.MainActivity">
 
     <LinearLayout
         android:orientation="horizontal"
