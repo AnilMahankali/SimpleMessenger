@@ -23,6 +23,20 @@
         android:layout_alignParentTop="true"
         android:layout_above="@+id/edit_message" />
 
+    <TextView
+        android:id="@+id/remote_text_display"
+        android:textColor="#0000AA"
+        android:background="#FFFFFF"
+        android:fadeScrollbars="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:maxLines="18"
+        android:textIsSelectable="true"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/edit_message"
+        android:layout_toRightOf="@+id/edit_message"
+        android:layout_toEndOf="@+id/edit_message" />
 
     <EditText
         android:id="@+id/edit_message"
