@@ -37,7 +37,7 @@ public class MainActivity extends Activity
     static final String TAG = MainActivity.class.getSimpleName();
     static final String REMOTE_PORT0 = "11108";
     static final String REMOTE_PORT1 = "11112";
-    static final int SERVER_PORT = 10000;
+    static final int SERVER_PORT = 8888;
 
     /** Called when the Activity is first created. */
     @Override
@@ -95,7 +95,7 @@ public class MainActivity extends Activity
              * and http://developer.android.com/tools/debugging/debugging-log.html
              * for more information on debugging.
              */
-            Log.e(TAG, "Can't create a ServerSocket");
+            Log.e(TAG, "Can't create a ServerSocket",e);
             return;
         } catch (Exception e){
             System.out.println("IN ActivityMain ERROR******"+e);
@@ -160,7 +160,7 @@ public class MainActivity extends Activity
                 }
             });
         } catch (Exception e) {
-            System.out.println("EVENT ONKEY" + e);
+            System.out.println("EVENT ON KEY" + e);
         }
 
     }
@@ -176,6 +176,7 @@ public class MainActivity extends Activity
         private class ServerTask extends AsyncTask<ServerSocket, String, Void> {
         @Override
         protected Void doInBackground(ServerSocket... sockets) {
+            System.out.print("doBackgrond****"+sockets);
             ServerSocket serverSocket = sockets[0];
             System.out.print("In ServerTask doInBackground*****:"+serverSocket);
             /*
